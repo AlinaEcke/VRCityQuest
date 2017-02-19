@@ -10,6 +10,10 @@ using SBS.Core;
 
 public class CQ_Interface : FiniteStateMachine
 {
+
+	//public string OVRSessionFileName;
+	public string OVRNavigationSceneFileName;
+
     #region Internal Data Structure
     public class MapElement
     {
@@ -273,20 +277,61 @@ public class CQ_Interface : FiniteStateMachine
         if (splashCanProcede && interfaceCanProcede)
         {
             splashCanProcede = false;
-            if (!preloader.useOVR)
-            {
-                this.State = LoginPage;
-            }
-            else
-            {
-                patientCode = "OVR";
-                TrackingManager.Instance.UserId = patientCode;
-                GameplayManager.HasDoneTutorial = true;
-                gameplayManager.Level = 0;
-                TrackingManager.Instance.StartTracking();
-                TrackingManager.Instance.SessionName = "scene_definition.xml";
-                gameplayManager.Gameplay = GameplayManager.GameplayType.ObstacleAvoidance;
-                preloader.CheckSession("ObstacleAvoidance/scene_definition.xml");
+			if (!preloader.useOVR) {
+				this.State = LoginPage;
+			} else {
+				if (gameplayManager.Gameplay == GameplayManager.GameplayType.Navigation) {
+
+					//DataContainer.SetFileName("Sessions\\" + OVRSessionFileName);
+
+					/*
+					//Skip learningPhase and tutorial:
+					GameplayManager.HasDoneTutorial = true;
+					gameplayManager.learningPhaseDone = true;
+					//disable map:
+					//gameplayManager.GetShowMap()
+
+					//To load xml string from given file name:
+					string filePath = "./Configurations/xml\\" + OVRNavigationSceneFileName;
+					string configText = System.IO.File.ReadAllText (filePath);
+
+					//To load xml file into EnvironmentManager object, call (passing in the xml as a string):
+					//envMgr.LoadConfigXml(configText);
+					//envMgr.LoadConfiguration ();
+					gameplayManager.SendMessage ("LoadConfiguration", configText);
+
+					//To create the DataContainer from the EnvironmentManager, call:
+					environmentManager.StartCreateEnvironment ();
+
+					//Placing character in level:
+					gameplayManager.InitializeCharacter (0);
+
+					//Call this to create the target stack:
+					DataContainer.Instance.UnloadLevelData ();
+
+					gameplayManager.OnEnvironmentReady (1);
+					*/
+
+					DataContainer.SetFileName("Sessions\\session_build1test.ses");
+					patientCode = "OVR";
+					TrackingManager.Instance.UserId = patientCode;
+					GameplayManager.HasDoneTutorial = true;
+					gameplayManager.Level = 0;
+					TrackingManager.Instance.StartTracking ();
+					TrackingManager.Instance.SessionName = "scene_definition.xml";
+					//gameplayManager.Gameplay = GameplayManager.GameplayType.ObstacleAvoidance;
+					preloader.CheckSession ("ObstacleAvoidance/scene_definition.xml");
+				} else {
+					
+					patientCode = "OVR";
+					TrackingManager.Instance.UserId = patientCode;
+					GameplayManager.HasDoneTutorial = true;
+					gameplayManager.Level = 0;
+					TrackingManager.Instance.StartTracking ();
+					TrackingManager.Instance.SessionName = "scene_definition.xml";
+					//gameplayManager.Gameplay = GameplayManager.GameplayType.ObstacleAvoidance;
+					preloader.CheckSession ("ObstacleAvoidance/scene_definition.xml");
+				}
             }
         }
     }
@@ -2171,7 +2216,12 @@ public class CQ_Interface : FiniteStateMachine
 
         SetGameTimeVisibility(false);
 
-        UpdateTotalTarget(gameplayManager.GetTargetByLevel(gameplayManager.Level));
+		UpdateTotalTarget(gameplayManager.GetTargetByLevel(gameplayManager.Level));
+
+		if (preloader.useOVR)
+		{
+			gameplayManager.characterOVR.BroadcastMessage("OnDestroyBackground", SendMessageOptions.DontRequireReceiver);
+		}
     }
 
     void OnNavIngameExec(FSMObject self, float time)
@@ -2431,10 +2481,12 @@ public class CQ_Interface : FiniteStateMachine
 
         MapElement targetElement = WorldToMap(worldPos);
 
-        targetCheck.x = targetElement.position.x;
-        targetCheck.y = targetElement.position.y;
+		if (targetCheck != null) { 
+			targetCheck.x = targetElement.position.x;
+			targetCheck.y = targetElement.position.y;
 
-        targetCheck.visible = true;
+			targetCheck.visible = true;
+		}
     }
 
     public void HideTargetOnMap()
