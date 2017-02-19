@@ -1,0 +1,56 @@
+<session>
+  <city_grid>
+    <horizontal value="0" />
+    <vertical value="0" />
+    <roads>
+      <road type="B" perc="0" />
+      <road type="C" perc="0" />
+      <road type="D" perc="0" />
+    </roads>
+    <blocks>
+      <block floors="1" perc="0" />
+      <block floors="2" perc="0" />
+      <block floors="3" perc="0" />
+      <block floors="4" perc="0" />
+    </blocks>
+  </city_grid>
+  <gameplay>
+    <targets number="0"/>
+  </gameplay>
+  <learningphase enabled="true" showtargetonmap="true" showmap="true" />
+  <levels>
+    <level id="1" showtargetonmap="false" showmap="false">
+      <obstacle_occurrences>
+        <occurrence number="1" perc="0"/>
+        <occurrence number="2" perc="0"/>
+        <occurrence number="3" perc="0"/>
+        <occurrence number="4" perc="0"/>
+      </obstacle_occurrences>
+      <obstacles sound="100">
+        <!-- Statics -->
+        <obstacle class="obs_ball" weight="0" alpha="1.0" />
+        <obstacle class="obs_barrier" weight="0" alpha="1.0" />
+        <obstacle class="obs_bench" weight="0" alpha="1.0" />
+        <obstacle class="obs_bike" weight="0" alpha="1.0" />
+        <obstacle class="obs_brokenpavement" weight="0" alpha="1.0" />
+        <obstacle class="obs_cable" weight="0" alpha="1.0" />
+        <obstacle class="obs_cone" weight="0" alpha="1.0" />
+        <obstacle class="obs_garbpile" weight="0" alpha="1.0" />
+        <obstacle class="obs_pole" weight="0" alpha="1.0" />
+        <obstacle class="obs_roadpuddle" weight="0" alpha="1.0" />
+        <!-- Dynamics -->
+        <obstacle class="obst_courierCart" weight="0" alpha="1.0" speed="1.0"/>
+        <obstacle class="obst_dressCarrier" weight="0" alpha="1.0" speed="1.0" />
+        <obstacle class="obst_garbageBin" weight="0" alpha="1.0" speed="1.0" />
+        <obstacle class="obst_shoppincart" weight="0" alpha="1.0" speed="1.0" />
+        <obstacle class="obst_rolling" weight="0" alpha="1.0" speed="1.0" />
+      </obstacles>
+      <pedestrians number="0" />
+      <graphics>
+        <!-- day/night -->
+        <illumination type="day" />
+      </graphics>
+      <obstacletimer seconds="120" />
+    </level>
+  </levels>
+</session>

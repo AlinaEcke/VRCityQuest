@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 755a88c927cb9b94ba49a973c6094c13
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ManD Bip01
+    100004: ManD Footsteps
+    100006: ManD Head
+    100008: ManD HeadNub
+    100010: ManD L Calf
+    100012: ManD L Clavicle
+    100014: ManD L Finger0
+    100016: ManD L Finger01
+    100018: ManD L Finger0Nub
+    100020: ManD L Finger1
+    100022: ManD L Finger11
+    100024: ManD L Finger1Nub
+    100026: ManD L Foot
+    100028: ManD L Forearm
+    100030: ManD L Hand
+    100032: ManD L Thigh
+    100034: ManD L Toe0
+    100036: ManD L Toe0Nub
+    100038: ManD L UpperArm
+    100040: ManD Neck
+    100042: ManD Pelvis
+    100044: ManD R Calf
+    100046: ManD R Clavicle
+    100048: ManD R Finger0
+    100050: ManD R Finger01
+    100052: ManD R Finger0Nub
+    100054: ManD R Finger1
+    100056: ManD R Finger11
+    100058: ManD R Finger1Nub
+    100060: ManD R Foot
+    100062: ManD R Forearm
+    100064: ManD R Hand
+    100066: ManD R Thigh
+    100068: ManD R Toe0
+    100070: ManD R Toe0Nub
+    100072: ManD R UpperArm
+    100074: ManD Spine
+    100076: ManD Spine1
+    100078: ManD Spine2
+    100080: ManD Spine3
+    100082: ManD talk chin
+    100084: manD_mesh
+    400000: //RootNode
+    400002: ManD Bip01
+    400004: ManD Footsteps
+    400006: ManD Head
+    400008: ManD HeadNub
+    400010: ManD L Calf
+    400012: ManD L Clavicle
+    400014: ManD L Finger0
+    400016: ManD L Finger01
+    400018: ManD L Finger0Nub
+    400020: ManD L Finger1
+    400022: ManD L Finger11
+    400024: ManD L Finger1Nub
+    400026: ManD L Foot
+    400028: ManD L Forearm
+    400030: ManD L Hand
+    400032: ManD L Thigh
+    400034: ManD L Toe0
+    400036: ManD L Toe0Nub
+    400038: ManD L UpperArm
+    400040: ManD Neck
+    400042: ManD Pelvis
+    400044: ManD R Calf
+    400046: ManD R Clavicle
+    400048: ManD R Finger0
+    400050: ManD R Finger01
+    400052: ManD R Finger0Nub
+    400054: ManD R Finger1
+    400056: ManD R Finger11
+    400058: ManD R Finger1Nub
+    400060: ManD R Foot
+    400062: ManD R Forearm
+    400064: ManD R Hand
+    400066: ManD R Thigh
+    400068: ManD R Toe0
+    400070: ManD R Toe0Nub
+    400072: ManD R UpperArm
+    400074: ManD Spine
+    400076: ManD Spine1
+    400078: ManD Spine2
+    400080: ManD Spine3
+    400082: ManD talk chin
+    400084: manD_mesh
+    4300000: manD_mesh
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: manD_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

@@ -1,0 +1,15 @@
+<general>
+  <debug>
+    <useBalanceBoard active="false" />
+    <!--<useOVR active="false" />-->
+  </debug>
+  <sounds>
+    <effects volume="75" />
+    <music volume="75" />
+  </sounds>
+  <character>
+    <strafespeedfactor value="1.0" />
+    <speedfactor value="1.0" />
+    <alpha value="0.5" />
+  </character>
+</general>

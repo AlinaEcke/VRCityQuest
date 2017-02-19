@@ -1,0 +1,213 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:simpleType name="obst_class">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="obs_ball" />
+      <xs:enumeration value="obs_barrier" />
+      <xs:enumeration value="obs_bench" />
+      <xs:enumeration value="obs_bike" />
+      <xs:enumeration value="obs_brokenpavement" />
+      <xs:enumeration value="obs_cable" />
+      <xs:enumeration value="obs_cone" />
+      <xs:enumeration value="obs_garbpile" />
+      <xs:enumeration value="obs_pole" />
+      <xs:enumeration value="obs_roadpuddle" />
+      <xs:enumeration value="obst_courierCart" />
+      <xs:enumeration value="obst_dressCarrier" />
+      <xs:enumeration value="obst_garbageBin" />
+      <xs:enumeration value="obst_shoppincart" />
+      <xs:enumeration value="obst_rolling" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="illumination_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="day" />
+      <xs:enumeration value="night" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="road_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A" />
+      <xs:enumeration value="B" />
+      <xs:enumeration value="C" />
+      <xs:enumeration value="D" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="percentage">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="100" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="session">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="city_grid" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="horizontal" minOccurs="1">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="value"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="vertical" minOccurs="1">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="value"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="roads" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="road" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="road_type" name="type" use="optional"/>
+                            <xs:attribute type="percentage" name="perc" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="blocks" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="block" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="floors" use="optional"/>
+                            <xs:attribute type="percentage" name="perc" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="gameplay" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="targets" minOccurs="1">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="number"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="learningphase" minOccurs="1">
+          <xs:complexType>
+            <xs:attribute type="xs:boolean" name="enabled"/>
+            <xs:attribute type="xs:boolean" name="showtargetonmap"/>
+            <xs:attribute type="xs:boolean" name="showmap"/>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="levels" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="level" maxOccurs="unbounded" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="obstacle_occurrences" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="occurrence" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="number"/>
+                                  <xs:attribute type="percentage" name="perc"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="obstacles" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="obstacle" maxOccurs="unbounded" minOccurs="1">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="obst_class" name="class" use="optional"/>
+                                  <xs:attribute type="xs:byte" name="weight" use="optional"/>
+                                  <xs:attribute type="xs:float" name="alpha" use="optional"/>
+                                  <xs:attribute type="xs:float" name="speed" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:int" name="sound" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="pedestrians" minOccurs="1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:int" name="number" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="graphics" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="illumination" minOccurs="1">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="illumination_type" name="type" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="obstacletimer" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:int" name="seconds" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                  <xs:attribute type="xs:boolean" name="showtargetonmap" use="optional"/>
+                  <xs:attribute type="xs:boolean" name="showmap" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

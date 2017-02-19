@@ -79,3 +79,19 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+fof_scenario.zip
+BalanceBoardPlugin.dll
+BalanceBoardPlugin.dll.meta
+fof_scenario/Builds.zip
+Builds
+Library
+Logs
+bfg.jar
+player_win_x86.pdb
+Build1_onMapPress_city_quest_Data
+Build1_test_city_quest_Data
+Build1_onMapPress_city_quest.exe
+Build1_test_city_quest.exe
+testVR1.exe
+testVR1_Data
+

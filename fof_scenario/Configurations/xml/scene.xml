@@ -1,0 +1,110 @@
+<session>
+  <city_grid>
+    <horizontal value="2" />
+    <vertical value="3" />
+    <roads>
+      <road type="B" perc="50" />
+      <road type="C" perc="50" />
+      <road type="D" perc="0" />
+    </roads>
+    <blocks>
+      <block floors="1" perc="10" />
+      <block floors="2" perc="50" />
+      <block floors="3" perc="30" />
+      <block floors="4" perc="10" />
+    </blocks>
+  </city_grid>
+  <gameplay>
+    <targets number="2"/>
+  </gameplay>
+  <learningphase enabled="true" showtargetonmap="true" showmap="true" />
+  <levels>
+    <level id="1" showtargetonmap="true" showmap="true">
+      <obstacle_occurrences>
+        <occurrence number="5" perc="100"/>
+      </obstacle_occurrences>
+      <obstacles sound="100">
+        <!-- Statics -->
+        <obstacle class="obs_ball" weight="0" alpha="1.0" />             <!-- Iron balls -->
+        <obstacle class="obs_barrier" weight="0" alpha="1.0" />          <!-- Roadworks -->
+        <obstacle class="obs_bench" weight="0" alpha="1.0" />            <!-- Wooden benches -->
+        <obstacle class="obs_bike" weight="0" alpha="1.0" />             <!-- Fallen bike -->
+        <obstacle class="obs_brokenpavement" weight="0" alpha="1.0" />   <!-- Broken pavement -->
+        <obstacle class="obs_cable" weight="0" alpha="1.0" />            <!-- Coloured cables -->
+        <obstacle class="obs_cone" weight="0" alpha="1.0" />             <!-- Roadworks cones -->
+        <obstacle class="obs_garbpile" weight="0" alpha="1.0" />         <!-- Pile of garbage -->
+        <obstacle class="obs_pole" weight="0" alpha="1.0" />             <!-- Iron poles -->
+        <obstacle class="obs_roadpuddle" weight="0" alpha="1.0" />       <!-- Puddle of mud -->
+        <!-- Dynamics -->
+        <obstacle class="obst_courierCart" weight="0" alpha="1.0" speed="1.0"/>     <!-- Low cart with boxes -->
+        <obstacle class="obst_dressCarrier" weight="0" alpha="1.0" speed="1.0" />    <!-- Dress carrier -->
+        <obstacle class="obst_garbageBin" weight="0" alpha="1.0" speed="1.0" />      <!-- Garbage bin -->
+        <obstacle class="obst_shoppincart" weight="0" alpha="1.0" speed="1.0" />     <!-- Shopping cart -->
+        <obstacle class="obst_rolling" weight="0" alpha="1.0" speed="1.0" />          <!-- Beach ball -->
+      </obstacles>
+      <pedestrians number="0" />
+      <graphics>
+        <!-- day/night -->
+        <illumination type="day" />
+      </graphics>
+    </level>
+    <level id="2" showtargetonmap="false" showmap="true">
+      <obstacle_occurrences>
+        <occurrence number="0" perc="100"/>
+      </obstacle_occurrences>
+      <obstacles sound="100">
+        <!-- Statics -->
+        <obstacle class="obs_ball" weight="10" alpha="1.0" />             <!-- Iron balls -->
+        <obstacle class="obs_barrier" weight="10" alpha="1.0" />          <!-- Roadworks -->
+        <obstacle class="obs_bench" weight="10" alpha="1.0" />            <!-- Wooden benches -->
+        <obstacle class="obs_bike" weight="10" alpha="1.0" />             <!-- Fallen bike -->
+        <obstacle class="obs_brokenpavement" weight="10" alpha="1.0" />   <!-- Broken pavement -->
+        <obstacle class="obs_cable" weight="10" alpha="1.0" />            <!-- Coloured cables -->
+        <obstacle class="obs_cone" weight="10" alpha="1.0" />             <!-- Roadworks cones -->
+        <obstacle class="obs_garbpile" weight="10" alpha="1.0" />         <!-- Pile of garbage -->
+        <obstacle class="obs_pole" weight="10" alpha="1.0" />             <!-- Iron poles -->
+        <obstacle class="obs_roadpuddle" weight="10" alpha="1.0" />       <!-- Puddle of mud -->
+        <!-- Dynamics -->
+        <obstacle class="obst_courierCart" weight="0" alpha="1.0" speed="1.0"/>     <!-- Low cart with boxes -->
+        <obstacle class="obst_dressCarrier" weight="0" alpha="1.0" speed="1.0" />    <!-- Dress carrier -->
+        <obstacle class="obst_garbageBin" weight="0" alpha="1.0" speed="1.0" />      <!-- Garbage bin -->
+        <obstacle class="obst_shoppincart" weight="0" alpha="1.0" speed="1.0" />     <!-- Shopping cart -->
+        <obstacle class="obst_rolling" weight="0" alpha="1.0" speed="1.0" />          <!-- Beach ball -->
+      </obstacles>
+      <pedestrians number="0" />
+      <graphics>
+        <!-- day/night -->
+        <illumination type="day" />
+      </graphics>
+    </level>
+    <level id="3" showtargetonmap="false" showmap="true">
+      <obstacle_occurrences>
+        <occurrence number="0" perc="100"/>
+      </obstacle_occurrences>
+      <obstacles sound="100">
+        <!-- Statics -->
+        <obstacle class="obs_ball" weight="10" alpha="1.0" />             <!-- Iron balls -->
+        <obstacle class="obs_barrier" weight="10" alpha="1.0" />          <!-- Roadworks -->
+        <obstacle class="obs_bench" weight="10" alpha="1.0" />            <!-- Wooden benches -->
+        <obstacle class="obs_bike" weight="10" alpha="1.0" />             <!-- Fallen bike -->
+        <obstacle class="obs_brokenpavement" weight="10" alpha="1.0" />   <!-- Broken pavement -->
+        <obstacle class="obs_cable" weight="10" alpha="1.0" />            <!-- Coloured cables -->
+        <obstacle class="obs_cone" weight="10" alpha="1.0" />             <!-- Roadworks cones -->
+        <obstacle class="obs_garbpile" weight="10" alpha="1.0" />         <!-- Pile of garbage -->
+        <obstacle class="obs_pole" weight="10" alpha="1.0" />             <!-- Iron poles -->
+        <obstacle class="obs_roadpuddle" weight="10" alpha="1.0" />       <!-- Puddle of mud -->
+        <!-- Dynamics -->
+        <obstacle class="obst_courierCart" weight="10" alpha="1.0" speed="1.0"/>     <!-- Low cart with boxes -->
+        <obstacle class="obst_dressCarrier" weight="10" alpha="1.0" speed="1.0" />    <!-- Dress carrier -->
+        <obstacle class="obst_garbageBin" weight="10" alpha="1.0" speed="1.0" />      <!-- Garbage bin -->
+        <obstacle class="obst_shoppincart" weight="10" alpha="1.0" speed="1.0" />     <!-- Shopping cart -->
+        <obstacle class="obst_rolling" weight="10" alpha="1.0" speed="1.0" />          <!-- Beach ball -->
+      </obstacles>
+      <pedestrians number="0" />
+      <graphics>
+        <!-- day/night -->
+        <illumination type="day" />
+      </graphics>
+    </level>
+  </levels>
+</session>

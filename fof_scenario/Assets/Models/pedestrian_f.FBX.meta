@@ -1,0 +1,326 @@
+fileFormatVersion: 2
+guid: 59b9abb01117d7e40869cd4ad5677822
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: thumb_R_2
+    100002: arm_L_3
+    100004: arm_L_2
+    100006: leg_R_3
+    100008: arm_R_2
+    100010: head
+    100012: neck
+    100014: thumb_R_1
+    100016: arm_L_1
+    100018: shoulder_L
+    100020: leg_R_2
+    100022: arm_R_1
+    100024: shoulder_R
+    100026: thumb_L_2
+    100028: finger_R_1
+    100030: arm_R_3
+    100032: ROOT
+    100034: spine1
+    100036: pelvis
+    100038: thumb_L_1
+    100040: finger_L_2
+    100042: leg_R_1
+    100044: finger_L_1
+    100046: finger_R_2
+    100048: leg_L_2
+    100050: leg_L_1
+    100052: leg_L_3
+    100054: f_mesh
+    100056: spine3
+    100058: spine2
+    100060: Bip02
+    100062: Bip02 Footsteps
+    100064: Bip02 Head
+    100066: Bip02 HeadNub
+    100068: Bip02 L Calf
+    100070: Bip02 L Clavicle
+    100072: Bip02 L Finger0
+    100074: Bip02 L Finger0Nub
+    100076: Bip02 L Finger1
+    100078: Bip02 L Finger1Nub
+    100080: Bip02 L Finger2
+    100082: Bip02 L Finger2Nub
+    100084: Bip02 L Finger3
+    100086: Bip02 L Finger3Nub
+    100088: Bip02 L Foot
+    100090: //RootNode
+    100092: Bip02 L Forearm
+    100094: Bip02 L Hand
+    100096: Bip02 L Thigh
+    100098: Bip02 L Toe0
+    100100: Bip02 L Toe0Nub
+    100102: Bip02 L UpperArm
+    100104: Bip02 Neck
+    100106: Bip02 Pelvis
+    100108: Bip02 R Calf
+    100110: Bip02 R Clavicle
+    100112: Bip02 R Finger0
+    100114: Bip02 R Finger0Nub
+    100116: Bip02 R Finger1
+    100118: Bip02 R Finger1Nub
+    100120: Bip02 R Finger2
+    100122: Bip02 R Finger2Nub
+    100124: Bip02 R Finger3
+    100126: Bip02 R Finger3Nub
+    100128: Bip02 R Foot
+    100130: Bip02 R Forearm
+    100132: Bip02 R Hand
+    100134: Bip02 R Thigh
+    100136: Bip02 R Toe0
+    100138: Bip02 R Toe0Nub
+    100140: Bip02 R UpperArm
+    100142: Bip02 Spine
+    100144: Bip02 Spine1
+    100146: Bip02 Spine2
+    100148: Bip02 Spine3
+    100150: passenger05
+    400000: thumb_R_2
+    400002: arm_L_3
+    400004: arm_L_2
+    400006: leg_R_3
+    400008: arm_R_2
+    400010: head
+    400012: neck
+    400014: thumb_R_1
+    400016: arm_L_1
+    400018: shoulder_L
+    400020: leg_R_2
+    400022: arm_R_1
+    400024: shoulder_R
+    400026: thumb_L_2
+    400028: finger_R_1
+    400030: arm_R_3
+    400032: ROOT
+    400034: spine1
+    400036: pelvis
+    400038: thumb_L_1
+    400040: finger_L_2
+    400042: leg_R_1
+    400044: finger_L_1
+    400046: finger_R_2
+    400048: leg_L_2
+    400050: leg_L_1
+    400052: leg_L_3
+    400054: f_mesh
+    400056: spine3
+    400058: spine2
+    400060: Bip02
+    400062: Bip02 Footsteps
+    400064: Bip02 Head
+    400066: Bip02 HeadNub
+    400068: Bip02 L Calf
+    400070: Bip02 L Clavicle
+    400072: Bip02 L Finger0
+    400074: Bip02 L Finger0Nub
+    400076: Bip02 L Finger1
+    400078: Bip02 L Finger1Nub
+    400080: Bip02 L Finger2
+    400082: Bip02 L Finger2Nub
+    400084: Bip02 L Finger3
+    400086: Bip02 L Finger3Nub
+    400088: Bip02 L Foot
+    400090: //RootNode
+    400092: Bip02 L Forearm
+    400094: Bip02 L Hand
+    400096: Bip02 L Thigh
+    400098: Bip02 L Toe0
+    400100: Bip02 L Toe0Nub
+    400102: Bip02 L UpperArm
+    400104: Bip02 Neck
+    400106: Bip02 Pelvis
+    400108: Bip02 R Calf
+    400110: Bip02 R Clavicle
+    400112: Bip02 R Finger0
+    400114: Bip02 R Finger0Nub
+    400116: Bip02 R Finger1
+    400118: Bip02 R Finger1Nub
+    400120: Bip02 R Finger2
+    400122: Bip02 R Finger2Nub
+    400124: Bip02 R Finger3
+    400126: Bip02 R Finger3Nub
+    400128: Bip02 R Foot
+    400130: Bip02 R Forearm
+    400132: Bip02 R Hand
+    400134: Bip02 R Thigh
+    400136: Bip02 R Toe0
+    400138: Bip02 R Toe0Nub
+    400140: Bip02 R UpperArm
+    400142: Bip02 Spine
+    400144: Bip02 Spine1
+    400146: Bip02 Spine2
+    400148: Bip02 Spine3
+    400150: passenger05
+    2300000: f_mesh
+    3300000: f_mesh
+    4300000: passenger05
+    4300002: f_mesh
+    7400000: Take 001
+    7400002: stay
+    7400004: walk
+    7400006: walk2stay
+    7400008: idle
+    7400010: hit
+    7400012: stay2walk
+    11100000: //RootNode
+    13700000: passenger05
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 3
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: stay
+      takeName: 
+      firstFrame: 1
+      lastFrame: 50
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk
+      takeName: 
+      firstFrame: 55
+      lastFrame: 80
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: stay2walk
+      takeName: 
+      firstFrame: 81
+      lastFrame: 85
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hit
+      takeName: 
+      firstFrame: 140
+      lastFrame: 175
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 
