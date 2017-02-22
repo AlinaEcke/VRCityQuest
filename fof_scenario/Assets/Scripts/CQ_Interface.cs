@@ -312,7 +312,7 @@ public class CQ_Interface : FiniteStateMachine
 					gameplayManager.OnEnvironmentReady (1);
 					*/
 
-					DataContainer.SetFileName("Sessions\\session_build1test.ses");
+					DataContainer.SetFileName("Sessions\\session_navigation.ses");
 					patientCode = "OVR";
 					TrackingManager.Instance.UserId = patientCode;
 					GameplayManager.HasDoneTutorial = true;

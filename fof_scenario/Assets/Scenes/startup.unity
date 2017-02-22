@@ -614,6 +614,10 @@ Prefab:
       propertyPath: characterRotationSpeedFactor
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: fd3b29eb4fbab8c4cabb0dce8800ffba, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd3b29eb4fbab8c4cabb0dce8800ffba, type: 2}
   m_IsPrefabParent: 0
